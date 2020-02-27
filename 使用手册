@@ -1,0 +1,16 @@
+一、如何运行
+1、python D:\workstation\DocxToExcel\WordParse.py D:\双双\文件\wenjian D:\双双\19年1批三相表-测控表-自主-明细-李双双20191111.xlsx 19-1天津
+2、python    （启动项）
+   D:\workstation\DocxToExcel\WordParse.py  （可执行脚本在电脑的实际位置）
+   D:\双双\文件\采购供货单1  （对应word的文件夹）
+   D:\双双\19年1批三相表-测控表-自主-明细-李双双20191111.xlsx    (准备数据输出的Excel文件，注意：1、必须是xlsx文件，否则无法写入；2、运行程序时必须关闭该Excle文件，否则无法写入)
+   19-1天津   (Excel文件中对应Sheet名称)
+二、注意事项
+1、本脚本程序只能解析对应结构的word文件，如word文件结构变化会引起解析错误或程序运行失败
+2、当程序运行失败和显示解析错误时，需手动删除Excel中已经写入的对应数据，以避免再次运行程序时写入的数据重复
+3、当运行界面显示succeed时说明该word解析完成并完整写入到Excel文件
+    例如：
+        D:\双双\文件\wenjian\SO06095763.docx succeed!
+   若显示fail说明该word写出失败
+    例如：
+        D:\双双\文件\wenjian\SO06095763.docx fail!
